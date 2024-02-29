@@ -24,6 +24,8 @@ Spring Boot application annotations:
 Additional features (to be implemented):
 Database integration (e.g., JPA) for persistent storage of vaccination center data
 REST API endpoints for managing vaccination center details, schedules, and potentially registrations
+
+
 2. Citizen Service
 
 Maven package: com.practice.hospital.CitizenService
@@ -40,14 +42,17 @@ Service class (optional):
 Create a service class to interact with the Feign client, encapsulating API calls and business logic.
 Example Code Snippets (Citizen Service)
 
+
 Building and Running
+
 
 Build each microservice: mvn clean install
 Run the Eureka Server (if not already running): java -jar vaccination-center/target/vaccination-center-*-*.jar --server.port=8761 
 Run the Citizen Service: java -jar citizen-service/target/citizen-service-*-*.jar --spring.application.name=citizen-service
 Testing
 
-Access the Citizen Service endpoint (if applicable) based on its specific configuration and functionality.
+
+Access the Citizen Service endpoint based on its specific configuration and functionality.
 Ensure proper interactions between microservices, including:
 Service discovery through Eureka Server
 Load balancing using @FeignClient annotation
