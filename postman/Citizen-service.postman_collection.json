@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "23e98439-df13-454c-8c28-6a9f1725e089",
+		"name": "Citizen-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Citizen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":2,\n    \"name\":\"Mysha\",\n    \"vaccinationCenterId\":1\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/citizen/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"citizen",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCitizenByVaccinationCentreId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/citizen/id/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"citizen",
+						"id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

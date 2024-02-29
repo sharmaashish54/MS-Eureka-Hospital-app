@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "92bc9bab-cbe0-44e8-b8d5-3b53e2177448",
+		"name": "Vaccination-center",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Vaccination centre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"centre_address\":\"Gopalpura\",\n    \"centre_name\":\"Bhandari Research\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/vaccinationcentre/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"vaccinationcentre",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVacinationCentreAndCitizenDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/vaccinationcentre/id/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"vaccinationcentre",
+						"id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
