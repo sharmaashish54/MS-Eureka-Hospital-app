@@ -1,0 +1,49 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "VaccinationApplication",
+            "request": "launch",
+            "mainClass": "com.practice.vaccinationcentre.vaccination.VaccinationApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "VaccinationCentreApplication",
+            "request": "launch",
+            "mainClass": "com.practice.vaccinationcentre.VaccinationCentreApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServerApplication<EurekaServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.practice.eurekaservice.EurekaServer.EurekaServerApplication",
+            "projectName": "EurekaServer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50525 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=EurekaServer"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CitizenServiceApplication<CitizenService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.practice.hospital.CitizenService.CitizenServiceApplication",
+            "projectName": "CitizenService",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-VaccinationApplication<vaccination>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.practice.vaccinationcentre.vaccination.VaccinationApplication",
+            "projectName": "vaccination",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

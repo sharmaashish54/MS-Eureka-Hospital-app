@@ -1,0 +1,17 @@
+server: 
+  port: 8081
+
+spring:
+  application:
+    name: CITIZEN-SERVICE  # Replace with your desired application name
+  datasource:
+    url: jdbc:mysql://localhost:3306/CitizenDB  # Replace with your database URL
+    username: root  # Replace with your database username
+    password: root  # Replace with your database password
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Use this for MySQL Connector/J 8.0+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update  # Optional: Auto-create and update database schema (adjust as needed)
+
+
