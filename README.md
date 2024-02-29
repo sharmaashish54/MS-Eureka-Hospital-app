@@ -1,5 +1,5 @@
-**Introduction
-**
+Introduction
+
 This project demonstrates a simple two-microservice architecture built in Java, using Spring Boot and other microservice-related technologies:
 
 Microservices:
